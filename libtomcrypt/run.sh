@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 bash build.sh " $1" "$2 -O2" "$3 IGNORE_SPEED=1" "$4" "$5"
 if [ -a testok.txt ] && [ -f testok.txt ]; then
    echo

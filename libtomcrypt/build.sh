@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "$1 ($2, $3)..."
 make clean 1>/dev/null 2>/dev/null
 echo -n "building..."
