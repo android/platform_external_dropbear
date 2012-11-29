@@ -316,7 +316,7 @@ static int checkmac(buffer* macbuf, buffer* sourcebuf) {
 
 	unsigned int macsize;
 	hmac_state hmac;
-	unsigned char tempbuf[MAX_MAC_LEN];
+	unsigned char tempbuf[MAX_MAC_LEN] = {};
 	unsigned long bufsize;
 	unsigned int len;
 
@@ -520,7 +520,7 @@ void encrypt_packet() {
 static void writemac(buffer * outputbuffer, buffer * clearwritebuf) {
 
 	unsigned int macsize;
-	unsigned char seqbuf[4];
+	unsigned char seqbuf[4] = {};
 	unsigned char tempbuf[MAX_MAC_LEN];
 	unsigned long bufsize;
 	hmac_state hmac;
